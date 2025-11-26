@@ -3,28 +3,30 @@ import type { MainMenuItem, MenuNavigation } from "~/types";
 export const menuMain: MainMenuItem[] = [
 	{
 		id: "home",
-		label: "Home",
+		label: "Beranda",
 		url: "/",
 	},
 	{
 		id: "cars",
-		label: "Cars",
+		label: "Cari Mobil",
 		url: "/cars",
 	},
 	{
 		id: "about",
-		label: "About",
+		label: "Tentang",
 		url: "/about-us",
 		submenu: [{ id: "testimonials", label: "Testimonials", url: "/about-us/testimonials" }],
 	},
 	{
 		id: "services",
-		label: "Services",
+		label: "Layanan",
 		url: "/services",
 		submenu: [
-			{ id: "repairs", label: "Repairs", url: "/services/repairs" },
-			{ id: "maintenance", label: "Maintenance", url: "/services/maintenance" },
-			{ id: "car-sales", label: "Car Sales", url: "/services/car-sales" },
+			{ id: "repairs", label: "Perbaikan", url: "/services/repairs" },
+			{ id: "maintenance", label: "Maintenis", url: "/services/maintenance" },
+			{ id: "car-sales", label: "Jualin Mobil", url: "/services/car-sales" },
+			{ id: "car-sales", label: "Bayarin Pajak", url: "/services/car-sales" },
+			{ id: "car-sales", label: "Ngurus BPKB", url: "/services/car-sales" },
 		],
 	},
 	{

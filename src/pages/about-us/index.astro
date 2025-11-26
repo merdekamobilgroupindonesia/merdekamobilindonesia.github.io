@@ -6,43 +6,54 @@ import Heading from "~/components/Heading.astro";
 import Team from "~/components/Team.astro";
 ---
 
-<Layout pageTitle="About Us" title="About Us">
-	<Section class:list={"bg-gray-50"}>
-		<Container>
-			<Heading>
-				<h1 slot="heading-title">About Us</h1>
-				<p slot="heading-content">
-					Welcome to HyperDrive! We are passionate about luxury cars and dedicated to providing the best
-					service to our customers. Our team of experts is here to help you find the perfect car that suits
-					your needs and preferences.
-				</p>
-			</Heading>
-		</Container>
-	</Section>
+<Layout pageTitle="Tentang Kami" title="Tentang Kami">
+    {/* Intro / History */}
+    <Section class:list={"bg-gray-50"}>
+        <Container>
+            <Heading>
+                <h1 slot="heading-title">Merdeka Mobil: Kebebasan Memilih Kualitas</h1>
+                <p slot="heading-content">
+                    Selamat datang di Merdeka Mobil. Kami berdiri dengan satu prinsip sederhana:
+                    <b>Membeli mobil bekas seharusnya tidak membuat Anda khawatir.</b>
+                    <br/><br/>
+                    Kami memahami bahwa mobil bukan sekadar alat transportasi, melainkan aset berharga dan bagian dari gaya hidup Anda.
+                    Sejak hari pertama, kami berkomitmen mengubah stigma jual beli mobil bekas dengan menghadirkan transparansi total,
+                    integritas tinggi, dan kejujuran dalam setiap transaksi. Di sini, Anda merdeka dari rasa cemas akan kondisi asli mesin
+                    maupun legalitas dokumen.
+                </p>
+            </Heading>
+        </Container>
+    </Section>
 
-	<Section>
-		<Container>
-			<Heading>
-				<h2 slot="heading-title">Our Mission</h2>
-				<p slot="heading-content">
-					At HyperDrive, our mission is to offer an exclusive collection of high-end vehicles that combine
-					elegance, performance, and sophistication. We strive to provide an exceptional customer experience
-					and ensure that every client drives away satisfied.
-				</p>
-			</Heading>
-		</Container>
-	</Section>
+    {/* Mission */}
+    <Section>
+        <Container>
+            <Heading>
+                <h2 slot="heading-title">Misi Kami</h2>
+                <p slot="heading-content">
+                    Di Merdeka Mobil, misi kami adalah menghadirkan ketenangan pikiran dalam setiap transaksi otomotif.
+                    Kami berkomitmen untuk menyediakan koleksi kendaraan yang telah melewati seleksi ketat—menggabungkan
+                    kualitas mesin prima, kenyamanan interior, dan kelengkapan dokumen. Kami bertekad untuk melayani
+                    setiap pelanggan dengan kejujuran, memberikan pengalaman jual beli yang tidak hanya profesional,
+                    tetapi juga personal dan memuaskan.
+                </p>
+            </Heading>
+        </Container>
+    </Section>
 
-	<Section class:list={"bg-gray-50"}>
-		<Container>
-			<Heading>
-				<h2 slot="heading-title">Meet Our Team</h2>
-				<p slot="heading-content">
-					Our dedicated team of professionals is here to assist you with all your car needs. Get to know the
-					people behind HyperDrive.
-				</p>
-			</Heading>
-			<Team />
-		</Container>
-	</Section>
+    {/* Team */}
+    <Section class:list={"bg-gray-50"}>
+        <Container>
+            <Heading>
+                <h2 slot="heading-title">Tim Profesional Kami</h2>
+                <p slot="heading-content">
+                    Kekuatan utama kami terletak pada sumber daya manusia yang berdedikasi.
+                    Mulai dari teknisi ahli yang memastikan kualitas setiap unit, hingga konsultan penjualan
+                    yang siap mendengarkan kebutuhan spesifik Anda. Kenali tim profesional di balik layar
+                    Merdeka Mobil yang siap melayani Anda sepenuh hati.
+                </p>
+            </Heading>
+            <Team />
+        </Container>
+    </Section>
 </Layout>

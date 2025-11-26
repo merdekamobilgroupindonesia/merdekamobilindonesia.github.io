@@ -22,250 +22,255 @@ import ImageOne from "~/assets/images/pexels-leif-bergerson-99376750-9764731.web
 import ImageTwo from "~/assets/images/pexels-zenzazione-2922140.webp";
 ---
 
-<Layout pageTitle="Home">
-	{/* Main Heading */}
-	<Section class:list={"relative"}>
-		<Image
-			src={ImageHeadingBackground}
-			alt="Heading background"
-			class:list={"absolute inset-0 w-full h-full object-cover"}
-		/>
-		<div class="absolute inset-0 w-full h-full object-cover bg-gray-800/80"></div>
-		<Container class:list={"relative z-10"}>
-			<Heading class:list={"prose-invert max-w-4xl"}>
-				<h1 slot="heading-title" class="mb-0 lg:text-7xl text-balance">
-					Find your next car in our exclusive collection
-				</h1>
-				<p slot="heading-content">
-					Search for your next car here. We have a wide range of cars for sale. Browse through our collection
-					and find the perfect car that suits your needs and budget.
-				</p>
-			</Heading>
-			<WidgetSearch />
-		</Container>
-	</Section>
+<Layout pageTitle="Beranda">
+    {/* Main Heading */}
+    <Section class:list={"relative"}>
+        <Image
+            src={ImageHeadingBackground}
+            alt="Latar belakang showroom"
+            class:list={"absolute inset-0 w-full h-full object-cover"}
+        />
+        <div class="absolute inset-0 w-full h-full object-cover bg-gray-800/80"></div>
+        <Container class:list={"relative z-10"}>
+            <Heading class:list={"prose-invert max-w-4xl"}>
+                <h1 slot="heading-title" class="mb-0 lg:text-7xl text-balance">
+                    Temukan Mobil Impian Anda di Merdeka Mobil
+                </h1>
+                <p slot="heading-content">
+                    Pusat jual beli mobil bekas berkualitas dan terpercaya. Temukan berbagai pilihan mobil
+                    dengan kondisi prima yang telah lulus inspeksi, siap menemani perjalanan Anda.
+                </p>
+            </Heading>
+            <WidgetSearch />
+        </Container>
+    </Section>
 
-	{/* Hero */}
-	<Section>
-		<Container>
-			<Hero>
-				<div slot="hero-left" class="prose lg:max-w-2xl">
-					<h2>Welcome to our car dealer!</h2>
-					<p>
-						Find your next car here. We have a wide range of cars for sale. Browse through our collection
-						and find the perfect car that suits your needs and budget.
-					</p>
+    {/* Hero - Introduction */}
+    <Section>
+        <Container>
+            <Hero>
+                <div slot="hero-left" class="prose lg:max-w-2xl">
+                    <h2>Selamat Datang di Merdeka Mobil</h2>
+                    <p>
+                        Kami berkomitmen menyediakan pengalaman transaksi jual beli mobil yang aman,
+                        nyaman, dan transparan. Koleksi mobil kami mencakup berbagai jenis mulai dari
+                        City Car, MPV keluarga, hingga SUV tangguh yang sesuai dengan kebutuhan dan anggaran Anda.
+                    </p>
 
-					<Button href="/cars" class:list={"mt-4"}>View all cars</Button>
-				</div>
-				<div slot="hero-right">
-					<Image src={ImageCarDealer} alt="Car dealer" />
-				</div>
-			</Hero>
-		</Container>
-	</Section>
+                    <Button href="/cars" class:list={"mt-4"}>Lihat Semua Mobil</Button>
+                </div>
+                <div slot="hero-right">
+                    <Image src={ImageCarDealer} alt="Showroom Merdeka Mobil" />
+                </div>
+            </Hero>
+        </Container>
+    </Section>
 
-	{/* Grid */}
-	<Section>
-		<Container>
-			<Grid>
-				<GridItem image={ImageOne} imageAlt="Car dealer" span={2} link="/cars" As="a" xl>
-					<h2>Featured cars</h2>
-					<p>
-						Discover the ultimate driving experience with our exclusive collection of featured cars. Whether
-						you're looking for a sleek sports car, a reliable family vehicle, or an eco-friendly hybrid, we
-						have something for everyone. Our extensive inventory is carefully curated to ensure that you
-						find the perfect match for your lifestyle and budget.
-					</p>
-					<Button As="button" type="button" color="white-outline" class:list={"mt-4 group-hover:bg-white/10"}
-						>View all cars</Button
-					>
-				</GridItem>
+    {/* Grid - Value Propositions */}
+    <Section>
+        <Container>
+            <Grid>
+                <GridItem image={ImageOne} imageAlt="Mobil Berkualitas" span={2} link="/cars" As="a" xl>
+                    <h2>Kualitas Premium</h2>
+                    <p>
+                        Dapatkan pengalaman berkendara terbaik dengan koleksi mobil pilihan kami.
+                        Setiap unit di Merdeka Mobil telah melewati proses inspeksi ketat pada mesin,
+                        kaki-kaki, hingga interior untuk memastikan mobil bebas banjir dan bebas tabrakan.
+                        Kami menjamin kepuasan dan ketenangan pikiran Anda.
+                    </p>
+                    <Button As="button" type="button" color="white-outline" class:list={"mt-4 group-hover:bg-white/10"}
+                        >Cek Stok Unit</Button
+                    >
+                </GridItem>
 
-				<GridItem image={ImageTwo} imageAlt="Car dealer" link="/cars" As="a">
-					<h3>Featured cars</h3>
-					<p>
-						Discover the ultimate driving experience with our exclusive collection of featured cars. Whether
-						you're looking for a sleek sports car, a reliable family vehicle, or an eco-friendly hybrid, we
-						have something for everyone.
-					</p>
-					<Button As="button" type="button" color="white-outline" class:list={"mt-4 group-hover:bg-white/10"}
-						>View all cars</Button
-					>
-				</GridItem>
+                <GridItem image={ImageTwo} imageAlt="Harga Kompetitif" link="/cars" As="a">
+                    <h3>Harga Terbaik</h3>
+                    <p>
+                        Kami menawarkan harga yang kompetitif dan transparan di pasaran.
+                        Dapatkan penawaran terbaik untuk mobil bekas rasa baru, baik
+                        untuk pembayaran tunai maupun kredit dengan cicilan ringan.
+                    </p>
+                    <Button As="button" type="button" color="white-outline" class:list={"mt-4 group-hover:bg-white/10"}
+                        >Lihat Penawaran</Button
+                    >
+                </GridItem>
 
-				<GridItem>
-					<h3>Featured cars</h3>
-					<p>
-						Discover the ultimate driving experience with our exclusive collection of featured cars. Whether
-						you're looking for a sleek sports car, a reliable family vehicle, or an eco-friendly hybrid, we
-						have something for everyone.
-					</p>
-				</GridItem>
-			</Grid>
-		</Container>
-	</Section>
+                <GridItem>
+                    <h3>Layanan Tukar Tambah</h3>
+                    <p>
+                        Ingin ganti suasana? Kami menerima tukar tambah mobil lama Anda dengan
+                        harga taksiran yang tinggi dan proses yang cepat. Upgrade kendaraan Anda
+                        sekarang di Merdeka Mobil.
+                    </p>
+                </GridItem>
+            </Grid>
+        </Container>
+    </Section>
 
-	{/* Hero */}
-	<Section class:list={"bg-gray-50"}>
-		<Container>
-			<Hero invert>
-				<div slot="hero-left" class="prose lg:max-w-2xl">
-					<h2>Welcome to our car dealer!</h2>
-					<p>
-						Find your next car here. We have a wide range of cars for sale. Browse through our collection
-						and find the perfect car that suits your needs and budget.
-					</p>
-				</div>
-				<div slot="hero-right">
-					<Image src={ImageCarDealer} alt="Car dealer" />
-				</div>
-			</Hero>
-		</Container>
-	</Section>
+    {/* Hero - Trade In / Selling Focus */}
+    <Section class:list={"bg-gray-50"}>
+        <Container>
+            <Hero invert>
+                <div slot="hero-left" class="prose lg:max-w-2xl">
+                    <h2>Jual Mobil Anda? Kami Beli!</h2>
+                    <p>
+                        Selain menjual, Merdeka Mobil juga melayani pembelian mobil bekas Anda.
+                        Tim appraisal kami siap memberikan penawaran harga objektif sesuai kondisi
+                        kendaraan. Proses cepat, dokumen aman, dan pembayaran langsung cair.
+                    </p>
+                </div>
+                <div slot="hero-right">
+                    <Image src={ImageCarDealer} alt="Transaksi Mobil" />
+                </div>
+            </Hero>
+        </Container>
+    </Section>
 
-	{/* Cars */}
-	<Section class:list={"bg-blue-50"}>
-		<Container>
-			<Heading>
-				<h2 slot="heading-title" class="mb-0">Featured cars</h2>
-				<p slot="heading-content">
-					Search for your next car here. We have a wide range of cars for sale. Browse through our collection
-					and find the perfect car that suits your needs and budget.
-				</p>
-			</Heading>
+    {/* Cars - Featured */}
+    <Section class:list={"bg-blue-50"}>
+        <Container>
+            <Heading>
+                <h2 slot="heading-title" class="mb-0">Pilihan Terbaik Minggu Ini</h2>
+                <p slot="heading-content">
+                    Rekomendasi mobil-mobil unggulan yang paling banyak dicari. Jangan sampai
+                    kehabisan unit favorit Anda.
+                </p>
+            </Heading>
 
-			<ShowCars slugs={["audi-tt-coupe", "porsche-911", "volkswagen-polo-gti"]} />
-		</Container>
-	</Section>
+            <ShowCars slugs={["audi-tt-coupe", "porsche-911", "volkswagen-polo-gti"]} />
+        </Container>
+    </Section>
 
-	{/* Stats */}
-	<Section>
-		<Container>
-			<Heading class:list={"text-center mx-auto"}>
-				<h2 slot="heading-title" class="text-balance">Why choose us?</h2>
-				<p slot="heading-content">
-					We are the leading car dealer in the country. With over 20 years of experience, we have helped
-					thousands of customers find their dream car.
-				</p>
-			</Heading>
+    {/* Stats */}
+    <Section>
+        <Container>
+            <Heading class:list={"text-center mx-auto"}>
+                <h2 slot="heading-title" class="text-balance">Kenapa Memilih Kami?</h2>
+                <p slot="heading-content">
+                    Merdeka Mobil telah menjadi mitra terpercaya masyarakat dalam urusan otomotif.
+                    Dedikasi kami terbukti dari kepuasan ribuan pelanggan.
+                </p>
+            </Heading>
 
-			<Stats
-				items={[
-					{
-						title: "Cars in stock",
-						value: "259",
-						animateNumber: true,
-						animateFrom: 100,
-					},
-					{
-						title: "Satified customers",
-						value: "1088",
-						animateNumber: true,
-						animateFrom: 800,
-					},
-					{
-						title: "Experience",
-						value: "20+ years",
-					},
-				]}
-			/>
-		</Container>
-	</Section>
+            <Stats
+                items={[
+                    {
+                        title: "Unit Ready Stock",
+                        value: "259",
+                        animateNumber: true,
+                        animateFrom: 100,
+                    },
+                    {
+                        title: "Pelanggan Puas",
+                        value: "1088",
+                        animateNumber: true,
+                        animateFrom: 800,
+                    },
+                    {
+                        title: "Pengalaman",
+                        value: "10+ Tahun",
+                    },
+                ]}
+            />
+        </Container>
+    </Section>
 
-	{/* CTA */}
-	<Section class:list={"bg-gradient-to-br from-gray-900 to-gray-700"}>
-		<Container>
-			<Heading class:list={"mb-0 lg:mb-0 prose-invert text-center mx-auto"}>
-				<h2 slot="heading-title">Can't find the ideal car?</h2>
+    {/* CTA */}
+    <Section class:list={"bg-gradient-to-br from-gray-900 to-gray-700"}>
+        <Container>
+            <Heading class:list={"mb-0 lg:mb-0 prose-invert text-center mx-auto"}>
+                <h2 slot="heading-title">Belum Menemukan Mobil yang Cocok?</h2>
 
-				<p slot="heading-content">
-					Our team is here to help you find the perfect car that suits your needs and budget. Whether you're
-					looking for a sleek sports car, a reliable family vehicle, or an eco-friendly hybrid, we have
-					something for everyone.
-				</p>
+                <p slot="heading-content">
+                    Tim kami siap membantu mencarikan unit spesifik yang sesuai dengan keinginan
+                    dan budget Anda. Konsultasikan kebutuhan otomotif Anda bersama kami sekarang juga.
+                </p>
 
-				<Button href="/contact" color="white" class:list={"mt-8"}>Contact us</Button>
-			</Heading>
-		</Container>
-	</Section>
+                <Button href="/contact" color="white" class:list={"mt-8"}>Hubungi Kami</Button>
+            </Heading>
+        </Container>
+    </Section>
 
-	{/* Cars */}
-	<Section class:list={"bg-gray-50"}>
-		<Container>
-			<Heading>
-				<h2 slot="heading-title" class="mb-0">Recent cars</h2>
-				<p slot="heading-content">
-					Search for your next car here. We have a wide range of cars for sale. Browse through our collection
-					and find the perfect car that suits your needs and budget.
-				</p>
-			</Heading>
+    {/* Cars - Recent */}
+    <Section class:list={"bg-gray-50"}>
+        <Container>
+            <Heading>
+                <h2 slot="heading-title" class="mb-0">Stok Terbaru</h2>
+                <p slot="heading-content">
+                    Lihat koleksi mobil yang baru saja masuk ke garasi Merdeka Mobil.
+                    Siap untuk Anda bawa pulang hari ini.
+                </p>
+            </Heading>
 
-			<ShowCars ui="grid" slugs={["audi-tt-coupe", "porsche-911", "volkswagen-polo-gti"]} />
-		</Container>
-	</Section>
+            <ShowCars ui="grid" slugs={["audi-tt-coupe", "porsche-911", "volkswagen-polo-gti"]} />
+        </Container>
+    </Section>
 
-	{/* News */}
-	<Section>
-		<Container>
-			<Heading class:list={"max-w-3xl"}>
-				<h2 slot="heading-title">Latest news</h2>
+    {/* News/Blog */}
+    <Section>
+        <Container>
+            <Heading class:list={"max-w-3xl"}>
+                <h2 slot="heading-title">Review & Tips Otomotif</h2>
 
-				<p slot="heading-content">
-					Stay up to date with the latest news and updates from our car dealer. Read our blog posts to learn
-					more about our featured cars, special offers, and industry news.
-				</p>
-			</Heading>
+                <p slot="heading-content">
+                    Dapatkan wawasan terbaru seputar dunia otomotif, tips perawatan mobil bekas,
+                    hingga review mendalam tentang mobil impian Anda di blog Merdeka Mobil.
+                </p>
+            </Heading>
 
-			<ShowPosts />
-		</Container>
-	</Section>
+            <ShowPosts />
+        </Container>
+    </Section>
 
-	{/* FAQ */}
-	<Section class:list={"bg-gray-50"}>
-		<Container>
-			<Heading class:list={"max-w-3xl mx-auto lg:text-center"}>
-				<h2 slot="heading-title">Welcome to our car dealer!</h2>
+    {/* FAQ */}
+    <Section class:list={"bg-gray-50"}>
+        <Container>
+            <Heading class:list={"max-w-3xl mx-auto lg:text-center"}>
+                <h2 slot="heading-title">Pertanyaan Umum</h2>
 
-				<p slot="heading-content">
-					Find your next car here. We have a wide range of cars for sale. Browse through our collection and
-					find the perfect car that suits your needs and budget.
-				</p>
-			</Heading>
+                <p slot="heading-content">
+                    Informasi penting yang sering ditanyakan oleh pelanggan Merdeka Mobil
+                    mengenai proses pembelian, dokumen, dan garansi.
+                </p>
+            </Heading>
 
-			<Faq
-				items={[
-					{
-						question: "What's the best thing about Switzerland?",
-						answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-					},
-					{
-						question: "What do you call a fake noodle?",
-						answer: "An impasta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-					},
-					{
-						question: "What do you call a belt made out of watches?",
-						answer: "A waist of time. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-					},
-				]}
-			/>
-		</Container>
-	</Section>
+            <Faq
+                items={[
+                    {
+                        question: "Apakah mobil di Merdeka Mobil bergaransi?",
+                        answer: "Ya, demi ketenangan hati Anda, kami memberikan garansi untuk komponen utama seperti mesin dan transmisi pada unit-unit tertentu. Silakan tanyakan detail garansi pada tim sales kami.",
+                    },
+                    {
+                        question: "Apakah dokumen kendaraan dijamin asli?",
+                        answer: "Tentu. Legalitas adalah prioritas kami. Semua mobil yang kami jual telah melalui pengecekan keabsahan surat-surat (BPKB, STNK, Faktur) dan dijamin bebas masalah hukum.",
+                    },
+                    {
+                        question: "Bisakah membeli secara kredit?",
+                        answer: "Sangat bisa. Kami bekerja sama dengan berbagai perusahaan leasing terpercaya untuk memberikan simulasi kredit dengan DP rendah dan cicilan yang bisa disesuaikan dengan kemampuan Anda.",
+                    },
+                    {
+                         question: "Apakah menerima tukar tambah?",
+                         answer: "Kami menerima layanan tukar tambah (Trade-in). Bawa mobil lama Anda untuk kami inspeksi dan taksir harganya, lalu gunakan dananya untuk upgrade ke mobil yang lebih baru di showroom kami."
+                    }
+                ]}
+            />
+        </Container>
+    </Section>
 
-	{/* Team */}
-	<Section>
-		<Container>
-			<Heading class:list={"max-w-3xl mx-auto lg:text-center"}>
-				<h2 slot="heading-title">Our team</h2>
+    {/* Team */}
+    <Section>
+        <Container>
+            <Heading class:list={"max-w-3xl mx-auto lg:text-center"}>
+                <h2 slot="heading-title">Tim Profesional Kami</h2>
 
-				<p slot="heading-content">
-					Meet the team behind our car dealer. Our dedicated staff is here to help you find the perfect car
-					that suits your needs and budget. Whether you're looking for a sleek sports car, a reliable family
-					vehicle, or an eco-friendly hybrid, we have something for everyone.
-				</p>
-			</Heading>
+                <p slot="heading-content">
+                    Di balik Merdeka Mobil, ada tim berdedikasi yang siap melayani Anda.
+                    Dari mekanik ahli hingga konsultan penjualan yang ramah, kami ada untuk
+                    memastikan Anda mendapatkan mobil terbaik.
+                </p>
+            </Heading>
 
-			<Team />
-		</Container>
-	</Section>
+            <Team />
+        </Container>
+    </Section>
 </Layout>
